@@ -14,7 +14,7 @@ RUN npm install
 COPY ./celestradepro .
 
 # Build the Angular app
-RUN npm run build
+RUN ng build
 
 # Use a smaller base image to serve the Angular app (e.g., "http-server")
 FROM node:16
